@@ -242,6 +242,111 @@
 		<!-- NOTE: Table data tags <td> act as data containers within the table. 
 		They can contain all sorts of HTML elements, such as text, images, lists, other tables and so on. -->
 
+	<h3>Table with borders</h3>
+
+	<!-- A border can be added using the border attribute inside the <table> tag -->
+
+		<table border="1.5px">
+			<tr>
+				<td>23</td>
+				<td>27</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>45</td>
+				<td>76</td>		
+			</tr>
+		</table>
+
+	<h3>Cell spaning multiple columns</h3>
+
+	<!-- A table cell can span two or more columns -->
+		<table border="1.5px">
+			<tr>
+				<td>23</td>
+				<td>27</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td colspan="2">45</td>		
+			</tr>
+		</table>
+
+
+	<h3>Cell spaning multiple rows</h3>
+	<!-- A table cell can span two or more rows -->
+
+		<table border="1.5px">
+			<tr>
+				<td rowspan="2">23</td>
+				<td>27</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>45</td>	
+			</tr>
+		</table>
+
+
+	<h3>Align table</h3>
+	<!-- this is done by adding the align attribute inside the table tag -->
+
+		<table border="1.5px" align="center">
+			<tr>
+				<td>23</td>
+				<td>27</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>45</td>
+				<td>76</td>		
+			</tr>
+		</table>
+
+
+	<h3>Background color for one cell in the table</h3>
+	<!-- Adding color to the bagground is done by using the bgcolor attribute -->
+
+	<!-- To only get one cell colored the attribute is added to the <td> tag that you want colored -->
+		<table border="1.5px">
+			<tr>
+				<td bgcolor="lightblue">23</td>
+				<td>27</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>45</td>
+				<td>76</td>		
+			</tr>
+		</table>
+
+
+	<h3>Background color for the whole table</h3>
+	<!-- Adding color to the bagground is done by using the bgcolor attribute -->
+
+	<!-- To color the entire background the same color, the attribute is added inside the table tag -->
+		<table border="1.5px" bgcolor="lightblue">
+			<tr>
+				<td>23</td>
+				<td>27</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>45</td>
+				<td>76</td>		
+			</tr>
+		</table>
+
+<!-- NOTE ON STYLING: this is much easier done using CSS code than HTML -->
+
+
+
 
 
 
