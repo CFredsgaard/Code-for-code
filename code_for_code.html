@@ -28,6 +28,7 @@
 	<h4>This is heading 4</h4>
 	<h5>This is heading 5</h5>
 	<h6>This is heading 6</h6>
+		
 		<!-- Horisontal line -->
 		<hr>
 
@@ -56,56 +57,61 @@
 <!-- Line breaks -->
 	
 	<!-- to continue a senteces on a new line without adding space between the lines the tag <br> is used to create a line break -->
-<h2>Line breaks</h2>
-	<p>This is a <br>line break</p>
+	<h2>Line breaks</h2>
+		<p>This is a <br>line break</p>
 
-	<!-- The line break can also be used to create an empty line adding more space between lines -->
+	<!-- The line break can also be used to create an empty line adding more space between two elements -->
 
 	<p>Note the big space between this line and... </p>
-	<br>
-	<br>
-	<br>
+		<br>
+		<br>
+		<br>
 	<p>...this line, 3 line breaks are used</p>
 		
 		<!-- Horisontal line -->
 		<hr>
 
+		<h1>Attributes:</h1>
 
 <!-- Attributes 
 
 	Note, attributes provide additional information about an element or a tag, while also modifying them. Most attributes have a value; the value modifies the attribute
 	Note, attributes are always specified inside the start tag, and they appear in name="value" pairs. -->
-<h1>Attributes:</h1>
+
 
 <h2>Align attributes</h2>
 	<!-- Align attribute, left is standard and doesn't need an attribute 
 		Note: the align attribute of <p> is not supported in HTML5-->
-	<p align="left">
-		This text is aligned to the left (standard, doesn't need an attribute)
-	</p>
+			<p align="left">
+				This text is aligned to the left (standard, doesn't need an attribute)
+			</p>
 
-	<p align="center">
-		This text is aligned to the center
-	</p>
+			<p align="center">
+				This text is aligned to the center
+			</p>
 
-	<p align="right">
-		This text is aligned to the right
-	</p>
+			<p align="right">
+				This text is aligned to the right
+			</p>
 
 	<!-- Width attribute, can be done in both pixels and %
 	The horisontal line <hr> is used to illustarte width attributes -->
 
 		<!-- Using px or %. It is better to use % for most things sinces this scales better across different screen sizes -->
 
-<h2>Width attribute, horisontal lines as examples</h2>
-	<hr width="300px">
-	<hr width="50%">
+		<h2>Width attribute, horisontal lines as examples</h2>
+			
+			<hr width="300px">
+			
+			<hr width="50%">
 
 		<!-- They are set to center by default, to get them to the left og right side all that is needed is to add the align attribute -->
 
-<h3>Combination of width- and align attributes for horisontal lines</h3>
-		<hr width="300px" align="left">
-		<hr width="50%" align="left">
+		<h3>Combination of width- and align attributes for horisontal lines</h3>
+			
+			<hr width="300px" align="left">
+
+			<hr width="50%" align="left">
 
 <!-- Images 
 	
@@ -119,14 +125,15 @@
 	<!-- Alt attribute for images
 	In case the image can not be displayed, the alt attribute specifies an alternate text that describes the image in words. The alt attribute is required -->
 
-<h2>Images</h2>
-	<img src="img/flower.jpg" alt="Flowers">
+		<h2>Images</h2>
+			
+			<img src="img/flower.jpg" alt="Flowers">
 
-	<img src="https://kj1bcdn.b-cdn.net/media/9253/gerbera-flower.jpg" alt="Flowers">
+			<img src="https://kj1bcdn.b-cdn.net/media/9253/gerbera-flower.jpg" alt="Flowers">
 
 	<!-- Test of alt attribute, no image is linked and the alt text will be displayed instead -->
-	<h3>Dislay of alt attribute</h3>
-	<img src="" alt="Flowers">
+		<h3>Dislay of alt attribute</h3>
+			<img src="" alt="Flowers">
 
 	<!-- The images are the same, but linked differently, the URL is the easier way, but if the picture is no longer found on that URL it will also disappear from your webpage, the alt attribute will be displayed instead -->
 
@@ -139,22 +146,24 @@
 
 	<!-- example of resizing the flower image -->
 
-<h2>Image resizing using width and height attributes</h2>
+		<h2>Image resizing using width and height attributes</h2>
 
-	<img src="img/flower.jpg" width="20%" height="20%" alt="">
-	<img src="img/flower.jpg" width="200px" height="200px" alt="">
+			<img src="img/flower.jpg" width="20%" height="20%" alt="">
+			<img src="img/flower.jpg" width="200px" height="200px" alt="">
 
-	<!-- using pixels for width and height disstortes the image, but it is also okay to only use the width attribute, that way the height is automatically set to what fits the widht. -->
+	<!-- OBS: using pixels for width and height disstortes the image, but it is also okay to only use the width attribute, that way the height is automatically set to what fits the widht. -->
 
-<h3>Image resizing using only width attribute</h3>
-	<img src="img/flower.jpg" width="20%" alt="">
-	<img src="img/flower.jpg" width="200px" alt="">
+		<h3>Image resizing using only width attribute</h3>
+
+			<img src="img/flower.jpg" width="20%" alt="">
+			<img src="img/flower.jpg" width="200px" alt="">
+
 
 <!-- Image border
 	Note, it can also be done in px or % -->
 
-<h2>Image border</h2>
-	<img src="img/flower.jpg" border="20px" alt="">
+		<h2>Image border</h2>
+			<img src="img/flower.jpg" border="20px" alt="">
 
 
 <!-- Links
@@ -163,7 +172,7 @@
 	Use the href attribute to define the link's destination address. -->
 
 
-<h2>Links</h2>
+<h2>Links (anchors)</h2>
 
 	<a href="https://www.google.com">Click this link: Google Search Engine</a>
 	<br>
@@ -171,16 +180,70 @@
 	<!-- Image as link: to link an image to another document, simple nest the <img> tag inside <a> tags -->
 	<br>
 	<p>The image is a link:</p>
-		<a href="https://www.google.com"><img src="img/google_logo.jpg"></a>
+		<a href="https://www.google.com">
+			<img src="img/google_logo.jpg">
+		</a>
 
 	<h3>Links and target attributes</h3>
 	<!-- The target attribute specifies where to open the linked document. 
 	Giving a _blank value to your attribute will have the link open in a new window or tab -->
 
-	<a href="https://www.google.com" 
-	target="_blank">
-		Click this link: Google Search Engine
-	</a>
+		<a href="https://www.google.com" 
+			target="_blank">
+			Click this link: Google Search Engine
+		</a>
+
+
+<!-- Lists -->
+	<h2>Lists</h2>
+		<h3>Ordered list</h3>
+		
+		<!-- An ordered list starts with the <ol> tag, and each list item is defined by the <li> tag. The list items will be automatically marked with numbers -->
+
+			<ol>
+				<li>Apple</li>
+				<li>Banana</li>
+				<li>Mango</li>
+				<li>Orange</li>
+			</ol>
+
+		<h3>Unordered list</h3>
+
+		<!-- An unordered list starts with the <ul> tag, and each list item is defined by the <li> tag. The list items will be automatically marked with bullets -->
+
+			<ul>
+				</a><li>Apple</li>
+				<li>Banana</li>
+				<li>Mango</li>
+				<li>Orange</li>
+			</ul>
+
+<!-- Tables -->
+	<h2>Tables</h2>
+	<!-- Tables are defined by using the <table> tag. 
+	Tables are divided into table rows with the <tr> tag
+	Table rows are divided into table columns (table data) with the <td> tag. -->
+
+		<!-- Example of a table with 2 rows and 3 columns -->
+
+		<table>
+			<tr>
+				<td>23</td>
+				<td>27</td>
+				<td>300</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>45</td>
+				<td>76</td>		
+			</tr>
+		</table>
+
+		<!-- NOTE: Table data tags <td> act as data containers within the table. 
+		They can contain all sorts of HTML elements, such as text, images, lists, other tables and so on. -->
+
+
+
 
 
 
