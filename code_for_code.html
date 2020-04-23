@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a title on the web fane</title>
+</head>
+<body>
+
+<!-- Shortcut to create a comment in HTML: "ctrl + /" -->
+
+
+	<header><h1>HTML tags</h1></header>
+
+<!-- Horisontal line
+	
+	Note: in HTML5, the <hr> tag defines a thematic break
+	I use it through out the document to seperate the different sections -->
+	
+	<hr>
+
+<!-- Different headings
+	HTML includes 6 headings which are ranked according to importance 
+
+	Note: it is not recommended to use headings to make text big or bold, because search engines use headings to index the web page structure and context-->
+<h2>Different headings</h2>
+	<h1>This is heading 1</h1>
+	<h2>This is heading 2</h2>
+	<h3>This is heading 3</h3>
+	<h4>This is heading 4</h4>
+	<h5>This is heading 5</h5>
+	<h6>This is heading 6</h6>
+		<!-- Horisontal line -->
+		<hr>
+
+
+
+<!-- Styling of paragraph text
+
+	Note: Browsers display <strong> as <b> and <em> as <i>. However, the meaning of these tags differ: <b> and <i> define bold and italic text, respectively, while <strong> and <em> indicate that the text is 'importat' -->
+
+<h2>Styling of text</h2>
+	<p>Regular text</p>
+	<p>Regular <b>Bold text</b></p>
+	<p>Regular <i>Italic text</i></p>
+	<p>Regular <big>Big text</big></p>
+	<p>Regular <small>Small text</small></p>
+	<p>Regular <strong>Strong text</strong></p>
+	<p>Regular <sub>Subscripted text</sub></p>
+	<p>Regular <sup>Superscripted text</sup></p>
+	<p>Regular <ins>Inserted text</ins></p>
+	<p>Regular <del>Deletede text</del></p>
+	<p>Regular <em>Em text</em></p>
+		
+		<!-- Horisontal line -->
+		<hr>
+
+<!-- Line breaks -->
+	
+	<!-- to continue a senteces on a new line without adding space between the lines the tag <br> is used to create a line break -->
+<h2>Line breaks</h2>
+	<p>This is a <br>line break</p>
+
+	<!-- The line break can also be used to create an empty line adding more space between lines -->
+
+	<p>Note the big space between this line and... </p>
+	<br>
+	<br>
+	<br>
+	<p>...this line, 3 line breaks are used</p>
+		
+		<!-- Horisontal line -->
+		<hr>
+
+
+<!-- Attributes 
+
+	Note, attributes provide additional information about an element or a tag, while also modifying them. Most attributes have a value; the value modifies the attribute
+	Note, attributes are always specified inside the start tag, and they appear in name="value" pairs. -->
+<h1>Attributes:</h1>
+
+<h2>Align attributes</h2>
+	<!-- Align attribute, left is standard and doesn't need an attribute 
+		Note: the align attribute of <p> is not supported in HTML5-->
+	<p align="left">
+		This text is aligned to the left (standard, doesn't need an attribute)
+	</p>
+
+	<p align="center">
+		This text is aligned to the center
+	</p>
+
+	<p align="right">
+		This text is aligned to the right
+	</p>
+
+	<!-- Width attribute, can be done in both pixels and %
+	The horisontal line <hr> is used to illustarte width attributes -->
+
+		<!-- Using px or %. It is better to use % for most things sinces this scales better across different screen sizes -->
+
+<h2>Width attribute, horisontal lines as examples</h2>
+	<hr width="300px">
+	<hr width="50%">
+
+		<!-- They are set to center by default, to get them to the left og right side all that is needed is to add the align attribute -->
+
+<h3>Combination of width- and align attributes for horisontal lines</h3>
+		<hr width="300px" align="left">
+		<hr width="50%" align="left">
+
+<!-- Images 
+	
+	Note, the <img> tag is used to insert an image. It contains only attributes, and does not have a closing tag. 
+	
+	The image's URL (address) or the file name for the downloaded img can be defined using the src attribute.
+
+		The HTML image syntax looks like this <img src="img/image.jpg">
+		OBS: remember the img/ inside the src attribute -->
+
+	<!-- Alt attribute for images
+	In case the image can not be displayed, the alt attribute specifies an alternate text that describes the image in words. The alt attribute is required -->
+
+<h2>Images</h2>
+	<img src="img/flower.jpg" alt="Flowers">
+
+	<img src="https://kj1bcdn.b-cdn.net/media/9253/gerbera-flower.jpg" alt="Flowers">
+
+	<!-- Test of alt attribute, no image is linked and the alt text will be displayed instead -->
+	<h3>Dislay of alt attribute</h3>
+	<img src="" alt="Flowers">
+
+	<!-- The images are the same, but linked differently, the URL is the easier way, but if the picture is no longer found on that URL it will also disappear from your webpage, the alt attribute will be displayed instead -->
+
+<!-- Image resizing 
+	
+	Note, to define the image size, use the width and height attributes. The value can be specified in px or %
+
+	OBS: loading images takes time, using large images can slow down your page. 
+	TIP: It is all about the file size, instead of making the image smaller using width and height attributes the file should be resized using other tools ahead of time, this will improve loading time. -->
+
+	<!-- example of resizing the flower image -->
+
+<h2>Image resizing using width and height attributes</h2>
+
+	<img src="img/flower.jpg" width="20%" height="20%" alt="">
+	<img src="img/flower.jpg" width="200px" height="200px" alt="">
+
+	<!-- using pixels for width and height disstortes the image, but it is also okay to only use the width attribute, that way the height is automatically set to what fits the widht. -->
+
+<h3>Image resizing using only width attribute</h3>
+	<img src="img/flower.jpg" width="20%" alt="">
+	<img src="img/flower.jpg" width="200px" alt="">
+
+<!-- Image border
+	Note, it can also be done in px or % -->
+
+<h2>Image border</h2>
+	<img src="img/flower.jpg" border="20px" alt="">
+
+
+<!-- Links
+	Links are also an integral part of every web page. You can add links to text or images that will enable the user to click on them in order to be directed to another file or web page.
+	In HTML, links are defined using the <a> tag
+	Use the href attribute to define the link's destination address. -->
+
+
+<h2>Links</h2>
+
+	<a href="https://www.google.com">Click this link: Google Search Engine</a>
+	<br>
+
+	<!-- Image as link: to link an image to another document, simple nest the <img> tag inside <a> tags -->
+	<br>
+	<p>The image is a link:</p>
+		<a href="https://www.google.com"><img src="img/google_logo.jpg"></a>
+
+	<h3>Links and target attributes</h3>
+	<!-- The target attribute specifies where to open the linked document. 
+	Giving a _blank value to your attribute will have the link open in a new window or tab -->
+
+	<a href="https://www.google.com" 
+	target="_blank">
+		Click this link: Google Search Engine
+	</a>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+</body>
+</html>
