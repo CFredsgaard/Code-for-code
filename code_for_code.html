@@ -8,7 +8,7 @@
 <!-- Shortcut to create a comment in HTML: "ctrl + /" -->
 
 
-	<header><h1>HTML tags</h1></header>
+	<header><h1>HTML</h1></header>
 
 <!-- Horisontal line
 	
@@ -17,20 +17,25 @@
 	
 	<hr>
 
-<!-- Different headings
-	HTML includes 6 headings which are ranked according to importance 
-
-	Note: it is not recommended to use headings to make text big or bold, because search engines use headings to index the web page structure and context-->
-<h2>Different headings</h2>
+<!-- Different headings -->
+<h1>Different headings:</h1>
 	<h1>This is heading 1</h1>
 	<h2>This is heading 2</h2>
 	<h3>This is heading 3</h3>
 	<h4>This is heading 4</h4>
 	<h5>This is heading 5</h5>
 	<h6>This is heading 6</h6>
+
+	<p>
+		HTML includes 6 headings which are ranked according to importance 
+
+		<br>Note: it is not recommended to use headings to make text big or bold, because search engines use headings to index the web page structure and context
+	</p>
+	
+
 		
-		<!-- Horisontal line -->
-		<hr>
+<!-- Horisontal line -->
+<hr>
 
 
 
@@ -38,21 +43,22 @@
 
 	Note: Browsers display <strong> as <b> and <em> as <i>. However, the meaning of these tags differ: <b> and <i> define bold and italic text, respectively, while <strong> and <em> indicate that the text is 'importat' -->
 
-<h2>Styling of text</h2>
-	<p>Regular text</p>
-	<p>Regular <b>Bold text</b></p>
-	<p>Regular <i>Italic text</i></p>
-	<p>Regular <big>Big text</big></p>
-	<p>Regular <small>Small text</small></p>
-	<p>Regular <strong>Strong text</strong></p>
-	<p>Regular <sub>Subscripted text</sub></p>
-	<p>Regular <sup>Superscripted text</sup></p>
-	<p>Regular <ins>Inserted text</ins></p>
-	<p>Regular <del>Deletede text</del></p>
-	<p>Regular <em>Em text</em></p>
+	<h2>Styling of text</h2>
+		<p>Regular text</p>
+		<p>Regular <b>Bold text</b></p>
+		<p>Regular <i>Italic text</i></p>
+		<p>Regular <big>Big text</big></p>
+		<p>Regular <small>Small text</small></p>
+		<p>Regular <strong>Strong text</strong></p>
+		<p>Regular <sub>Subscripted text</sub></p>
+		<p>Regular <sup>Superscripted text</sup></p>
+		<p>Regular <ins>Inserted text</ins></p>
+		<p>Regular <del>Deletede text</del></p>
+		<p>Regular <em>Em text</em></p>
 		
-		<!-- Horisontal line -->
-		<hr>
+<!-- Horisontal line -->
+	<hr>
+
 
 <!-- Line breaks -->
 	
@@ -67,19 +73,23 @@
 		<br>
 		<br>
 	<p>...this line, 3 line breaks are used</p>
+	
+
+
+<!-- Horisontal line -->
+	<hr>
+
 		
-		<!-- Horisontal line -->
-		<hr>
 
-		<h1>Attributes:</h1>
+<!-- Attributes -->
+	<h1>Attributes:</h1>
+		<p>
+			Note, attributes provide additional information about an element or a tag, while also modifying them. Most attributes have a value; the value modifies the attribute.
+			<br>Note, attributes are always specified inside the start tag, and they appear in name="value" pairs. 
+		</p>
+	
 
-<!-- Attributes 
-
-	Note, attributes provide additional information about an element or a tag, while also modifying them. Most attributes have a value; the value modifies the attribute
-	Note, attributes are always specified inside the start tag, and they appear in name="value" pairs. -->
-
-
-<h2>Align attributes</h2>
+	<h2>Align attributes</h2>
 	<!-- Align attribute, left is standard and doesn't need an attribute 
 		Note: the align attribute of <p> is not supported in HTML5-->
 			<p align="left">
@@ -347,17 +357,25 @@
 
 <!-- Elements -->
 <h2>Types of elements</h2>
-<!-- In HTML most elements are defined as 'block level' og 'inline' elements. -->
+	<p>In HTML most elements are defined as 'block level' og 'inline' elements.</p>
 
-	<h3>Block level elements start from a new line.</h3>
+
+<!-- Block level -->
+	<h3>Block level elements</h3>
 		<p>
+			These start from a new line.
 			For example: h1, form, li, ol, ul, p, pre, table, div, etc.
 		</p>
 		<br>
-
-
-	<h3>Inline elements are normally displayed without line breaks.</h3>
 		<p>
+			Ypu can insert inline elements inside block elements. But inline elements can not contain any block level elements. 
+		</p>
+
+
+<!-- Inline elements -->
+	<h3>Inline elements</h3>
+		<p>
+			These are normally displayed without line breaks.
 			For example: b, a, strong, img, input, em, span, etc.
 		</p>
 		<br>
@@ -383,11 +401,40 @@
  			This element is an inline element that is often used as a container for some text. 
  			<br>When used together with CSS, the span element can be used to style parts of the text:
  		</p>
- 		<br>
+
  		<!-- Example -->
  		<p>
  			This is an <span style="color: orange;">important</span> message!
  		</p>
+ 		<br>
+
+<!-- Elements that can be used as both inline elements and block level elements -->
+	<h3>Elements that can be used as both inline elements and block level elements</h3>
+		<p>
+			Some elements can be used either as block level elements or inline elements. 
+			<br>This includes the following elements
+			<ul>
+				<li><b>APPLET</b> - embedded Jana applet</li>
+				<li><b>IFRAME</b> - inline frame</li>
+				<li><b>INS</b> - inserted text</li>
+				<li><b>MAP</b> - image map</li>
+				<li><b>OBJECT</b> - embedded object</li>
+				<li><b>SCRIPT</b> - script within an HTML document</li>
+			</ul>
+		</p>
+
+
+<!-- Form elemets-->
+	<h2>Form elements</h2>
+		<p>
+			HTML forms are used to collect information from the user.
+			<br>Forms are defined using the form element, with its opening and closing tages: 
+		</p>
+
+		<!-- example -->
+		<form action="https://google.com" target="_blank">Google</form>
+
+
 
 
  
@@ -402,19 +449,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 	
 
-
+<br><br><br><br>
 
 </body>
 </html>
